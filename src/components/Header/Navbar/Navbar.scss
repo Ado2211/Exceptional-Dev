@@ -3,7 +3,16 @@
   min-height: 6vh;
 color: white;
   transition: all .7s ease-in;
+  margin-right: 10%;
+  margin-left: 10%;
 }
+
+@media screen and (max-width: 750px) {
+  .navbar {
+   margin-right: 5%;
+   margin-left: 5%;
+  }
+ }
 
 //IMPORTANT
 .scrolled {
@@ -21,5 +30,5 @@ margin-top: 20px;
 
 .nav-link{
   margin-right: 30px;
-  margin-top: 20px;
+  
 }
