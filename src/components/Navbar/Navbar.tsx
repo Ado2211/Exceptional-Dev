@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import './Navbar.scss'
-import  logo from "../../../assets/logo.png";
+import  logo from "../../assets/logo.png";
 import * as ReactBootStrap from "react-bootstrap";
 
 const Navbar = () => {

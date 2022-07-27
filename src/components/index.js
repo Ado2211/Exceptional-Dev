@@ -1,8 +1,8 @@
-import Navbar from './Header/Navbar/Navbar';
+import Navbar from './Navbar/Navbar';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import WhatWeDo from './WhatWeDo/WhatWeDo';
+import WhatWeDo from './Needs/WhatWeDo';
 import LastProjects from './LastProjects/LastProjects';
 import WhyToChose from './WhyToChose/WhyToChose';
 

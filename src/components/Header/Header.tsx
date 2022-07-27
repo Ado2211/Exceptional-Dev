@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Navbar from "./Navbar/Navbar";
+
 import './Header.scss'
+import Navbar from "../Navbar/Navbar";
 
 
 
