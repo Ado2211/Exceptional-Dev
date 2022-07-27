@@ -15,7 +15,7 @@ const WhyToChose = () => {
                     <p>Neki tekst</p>
                 </div>
 
-                <div className="square active">
+                <div className="square actives">
                     <img className="iconsWhy" src={images.handShake} alt="" />
                     <h3>Trust</h3>
                     <p>Neki tekst</p>

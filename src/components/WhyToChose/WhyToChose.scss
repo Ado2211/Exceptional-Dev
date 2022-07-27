@@ -44,6 +44,14 @@ margin-right: 30px;
 
 }
 
+.square:hover{
+    background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
+    color:#EAEEF2; 
+    cursor: pointer;
+}
+
+
+
 .square>h3 {
     font-weight: 900;
     font-size: 20px;
@@ -63,12 +71,10 @@ margin-right: 30px;
    padding-bottom: 10px;
    padding-left: 20px;
    padding-right: 20px;
+   
 }
 
-.active {
-    background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
-    color:#EAEEF2;
-}
+
 
 @media screen and (max-width: 850px) {
     .squares {
