@@ -55,8 +55,9 @@
     display:none;
 }
 
-.active {
-    display: block;
+.actives {
+    display:block;
+    transition-delay: 2s;
 }
 
 
