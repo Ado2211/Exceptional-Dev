@@ -4,6 +4,9 @@ import handShake from "../assets/handShake.png";
 import person from "../assets/person.png";
 import shield from "../assets/shield.png";
 import time from "../assets/time.png";
+import mobileDev from "../assets/mobileIcon.png";
+import software from "../assets/software.png";
+import webDev from "../assets/webDev.png";
 
 export default {
     bgWhy,
@@ -12,6 +15,9 @@ export default {
     person,
     shield,
     time,
+    mobileDev,
+    software,
+    webDev,
 
 
 }

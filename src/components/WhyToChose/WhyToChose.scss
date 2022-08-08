@@ -1,7 +1,7 @@
 .whyToChose {
     padding-left: -20%;
     padding-right: -20%;
-    padding-bottom: 400px;
+   
     background-color: #c9d2e6;
     position: relative;
     z-index: 0;
@@ -23,8 +23,9 @@
 .naslovWhy {
     text-align: center;
     padding-top: 90px;
-    margin-bottom: 50px;
+    
     font-size: 30px;
+
 }
 
 .squares {
@@ -57,7 +58,22 @@
 
 .actives {
     display:block;
-    transition-delay: 2s;
+    
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+}
+
+.shape {
+    width: 30px;
+    height: 10px;
+    margin-bottom:50px; 
+    background: linear-gradient(90deg, rgba(99, 44, 135, 0.7) 0%, rgba(241, 42, 205, 0.7) 100%);
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+border-radius: 20px;
+transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 
@@ -124,4 +140,9 @@
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+}
+
+.abouts {
+    width: 100%;
+    height: 300px;
 }

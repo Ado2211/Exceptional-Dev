@@ -4,7 +4,7 @@ import './WhyToChose.scss'
 import images from "../../assets/images";
 
 const WhyToChose = () => {
-    
+
     function handleHover() {
         let about = document.getElementsByClassName('aboutUser');
 
@@ -73,7 +73,13 @@ const WhyToChose = () => {
     return (
         <section className="whyToChose ">
             <img className="imgBg " src={images.bgWhy} alt="" />
-            <h1 className="naslovWhy">Why to Chose Exceptional Development?</h1>
+            <h1 className="naslovWhy">Why to Chose Exceptional Development?
+            </h1>
+            <div className="shapes">
+                <div className="shape"></div>
+            </div>
+
+
             <div className="squares">
                 <div className="square" onMouseOver={handleHover} onMouseLeave={handleMouseLeave}>
                     <img className="iconsWhy" id="userFriendly" src={images.person} alt="" />
@@ -103,23 +109,23 @@ const WhyToChose = () => {
                     <p>Neki tekst ovdje </p>
                 </div>
             </div>
+            <div className="abouts">
+                <div className="aboutUser about"><b>Exceptional development</b> is a team of young but
+                    experienced and responsible people in their work.<br></br>
+                    With a lot of experience and responsibility, <b>we are ready for the challenges</b> <br></br>
+                    you have for us.
+                </div>
 
-            <div className="aboutUser about"><b>Exceptional development</b> is a team of young but
-                experienced and responsible people in their work.<br></br>
-                With a lot of experience and responsibility, <b>we are ready for the challenges</b> <br></br>
-                you have for us.
+                <div className="aboutTrust about ">With a lot of experience and responsibility,
+                    <b>we are ready for the challenges</b> <br></br>
+                </div>
+
+                <div className="abouGuarantee about">With a lot of experience
+                </div>
+
+                <div className="aboutOnTime about">experience and responsibility,
+                </div>
             </div>
-
-            <div className="aboutTrust about ">With a lot of experience and responsibility,
-                <b>we are ready for the challenges</b> <br></br>
-            </div>
-
-            <div className="abouGuarantee about">With a lot of experience
-            </div>
-
-            <div className="aboutOnTime about">experience and responsibility,
-            </div>
-
         </section>
 
 
