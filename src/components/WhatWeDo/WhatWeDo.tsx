@@ -1,58 +1,139 @@
 import React from "react";
-import './WhatWeDo.scss'
+import './WhatWeDo.scss';
+import images from "../../assets/images";
 
 const WhatWeDo = () => {
+
+    function handleHover() {
+        let mobile = document.getElementsByClassName('mobileDev');
+        let web = document.getElementsByClassName('webDev');
+        let soft = document.getElementsByClassName('softwareDev');
+
+        for (let i = 0; i < web.length; i++) {
+            web[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < soft.length; i++) {
+            soft[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < mobile.length; i++) {
+            mobile[i].classList.add('actives');
+
+        }
+
+    }
+
+    function handleHovers() {
+        let about = document.getElementsByClassName('mobileDev');
+        let web = document.getElementsByClassName('webDev');
+        let soft = document.getElementsByClassName('softwareDev');
+        let selected = document.getElementsByClassName('selected');
+
+        for (let i = 0; i < selected.length; i++) {
+            selected[i].classList.remove('selected');
+        }
+
+        for (let i = 0; i < about.length; i++) {
+            about[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < soft.length; i++) {
+            soft[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < web.length; i++) {
+            web[i].classList.add('actives')
+        }
+    }
+
+
+
+    function handleHovers1() {
+        let mobile = document.getElementsByClassName('mobileDev');
+        let web = document.getElementsByClassName('webDev');
+        let soft = document.getElementsByClassName('softwareDev');
+        let selected = document.getElementsByClassName('selected');
+
+        for (let i = 0; i < selected.length; i++) {
+            selected[i].classList.remove('selected');
+        }
+
+        for (let i = 0; i < mobile.length; i++) {
+            mobile[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < web.length; i++) {
+            web[i].classList.remove('actives');
+        }
+
+        for (let i = 0; i < soft.length; i++) {
+            soft[i].classList.add('actives')
+        }
+    }
+
+
+
     return (
-        <section className="whyToChose ">
-            <img className="imgBg " src={images.bgWhy} alt="" />
-            <h1 className="naslovWhy">Why to Chose Exceptional Development?</h1>
-            <div className="squares">
-                <div className="square" onMouseOver={handleHover} onMouseLeave={handleMouseLeave}>
-                    <img className="iconsWhy" id="userFriendly" src={images.person} alt="" />
-                    <h3>User Friendly</h3>
-                    <p>Neki tekst ovdje treba</p>
-                    <p>Neki tekst ovdje </p>
+        <section className="whatWeDo">
+            <h1 className="naslovWhy">What <b> We do </b>?</h1>
+            <div className="shapes">
+                <div className="shape"></div>
+            </div>
+            <div className="circles">
+                <div className="circle selected" onMouseOver={handleHover} >
+                    <img className="img" id="userFriendly" src={images.mobileDev} alt="" />
+
                 </div>
 
-                <div className="square" onMouseOver={handleHovers} onMouseLeave={handleMouseLeaves}>
-                    <img className="iconsWhy" id="trust" src={images.handShake} alt="" />
-                    <h3>Trust</h3>
-                    <p>Neki tekst ovdje treba</p>
-                    <p>Neki tekst ovdje </p>
+                <div className="circle circleCenter" onMouseOver={handleHovers} >
+                    <img className="img" id="trust" src={images.webDev} alt="" />
+
                 </div>
 
-                <div className="square" onMouseOver={handleHovers1} onMouseLeave={handleMouseLeaves1}>
-                    <img className="iconsWhy" id="shield" src={images.shield} alt="" />
-                    <h3>Guarantee</h3>
-                    <p>Neki tekst ovdje treba</p>
-                    <p>Neki tekst ovdje </p>
+                <div className="circle" onMouseOver={handleHovers1} >
+                    <img className="img" id="shield" src={images.software} alt="" />
+
                 </div>
 
-                <div className="square" onMouseOver={handleHovers2} onMouseLeave={handleMouseLeaves2}>
-                    <img className="iconsWhy" id="onTime" src={images.time} alt="" />
-                    <h3>On Time</h3>
-                    <p>Neki tekst ovdje treba</p>
-                    <p>Neki tekst ovdje </p>
+
+            </div>
+            <div className="aboutDev">
+
+                <div className="mobileDev abou hide actives">
+                    <h3>Mobile APP Development</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it <br></br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it <br></br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                    </p>
                 </div>
-            </div>
 
-            <div className="aboutUser about"><b>Exceptional development</b> is a team of young but
-                experienced and responsible people in their work.<br></br>
-                With a lot of experience and responsibility, <b>we are ready for the challenges</b> <br></br>
-                you have for us.
-            </div>
+                <div className="webDev abou hide">
 
-            <div className="aboutTrust about ">With a lot of experience and responsibility,
-                <b>we are ready for the challenges</b> <br></br>
-            </div>
+                    <h3>Web APP Development</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it <br></br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br></br>
+                        when an a galley of type and scrambled itLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                    </p>
+                </div>
 
-            <div className="abouGuarantee about">With a lot of experience
-            </div>
+                <div className="softwareDev abou hide">
+                    <h3>Software Development</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        <br></br>
+                        Lorem Ipsum has been the industry's standard dummy when an unknown printer took a galley of type and scrambled ittext ever since the 1500s, when an a galley of type and scrambled it <br></br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                    </p>
+                </div>
 
-            <div className="aboutOnTime about">experience and responsibility,
-            </div>
 
-        </section>
+            </div>
+            <div className="technologies">
+                <div>The Technologies We Use</div>
+            </div>
+        </section >
     )
 }
 
