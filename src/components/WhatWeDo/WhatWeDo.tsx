@@ -75,7 +75,7 @@ const WhatWeDo = () => {
 
 
     return (
-        <section className="whatWeDo">
+        <section className="whatWeDo" id="whatWeDo">
             <h1 className="naslovWhy">What <b> We do </b>?</h1>
             <div className="shapes">
                 <div className="shape"></div>

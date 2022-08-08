@@ -16,9 +16,9 @@ const Navbar = () => {
                     <ReactBootStrap.Nav className=" ms-auto">
 
                         <ReactBootStrap.Nav.Link href="#aboutUs">About Us</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="#pricing">What We Do</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="#deets">Our Team</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="#memes"> Projects</ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#whatWeDo">What We Do</ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#ourTeam">Our Team</ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#projects"> Projects</ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="#contactUs">Contact Us</ReactBootStrap.Nav.Link>
 
                     </ReactBootStrap.Nav>

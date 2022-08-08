@@ -71,7 +71,7 @@ const WhyToChose = () => {
 
 
     return (
-        <section className="whyToChose ">
+        <section className="whyToChose  " id="aboutUs">
             <img className="imgBg " src={images.bgWhy} alt="" />
             <h1 className="naslovWhy">Why to Chose Exceptional Development?
             </h1>
