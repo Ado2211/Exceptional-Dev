@@ -31,7 +31,7 @@
 .squares {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+   
    
 }
 
@@ -82,19 +82,19 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
 .square>h3 {
     font-weight: 900;
-    font-size: 150%;
+    font-size: 120%;
 
 }
 
 .square>p {
-    font-size: 100%;
+    
     margin-bottom: 10px;
 }
 
 .iconsWhy {
     background-color: #98a8cd45;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
     width: 40%;
     height: auto;
     border-radius: 25px;
@@ -107,23 +107,24 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:600px) {
     .squares {
+        display: block;
         
         margin-left: auto;
-        margin-right: auto;
+
     }
 
     .square {
         margin-top: 30px;
-        width: 50%;
+        width: 200px;
+        margin-left: 130px;
     }
 
     .imgBg {
-        height: auto;
-        width: 150%;
+       width: 120%;
         margin-top: 350px;
-        margin-left: -200px;
+        
         transform: rotate(90deg);
     }
 
@@ -133,19 +134,14 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     }
 
     .iconsWhy {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
-.about {
-    text-align: center;
-    font-size: 22px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 
 
 .about>b {
