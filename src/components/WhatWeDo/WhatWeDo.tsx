@@ -1,6 +1,7 @@
 import React from "react";
 import './WhatWeDo.scss';
 import images from "../../assets/images";
+import { Container } from "react-bootstrap";
 
 const WhatWeDo = () => {
 
@@ -76,6 +77,7 @@ const WhatWeDo = () => {
 
     return (
         <section className="whatWeDo" id="whatWeDo">
+            <Container>
             <h1 className="naslovWhy">What <b> We do </b>?</h1>
             <div className="shapes">
                 <div className="shape"></div>
@@ -133,6 +135,7 @@ const WhatWeDo = () => {
             <div className="technologies">
                 <div>The Technologies We Use</div>
             </div>
+            </Container>
         </section >
     )
 }
