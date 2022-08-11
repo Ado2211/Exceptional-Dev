@@ -22,7 +22,7 @@
 
 .naslovWhy {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 100px;
     
     font-size: 30px;
 
@@ -31,27 +31,31 @@
 .squares {
     display: flex;
     justify-content: center;
-   
+   padding-right: 2.5px;
    
 }
 
 .square {
-    width: 15%;
+    
+    width: 200px;
     height: auto;
     border-radius: 25px;
     text-align: center;
     background-color: rgba(255, 255, 255, );
-    margin-right: 2%;
-    margin-left: 2%;
-    transition: box-shadow 500ms ease, color 10ms ease-in-out;
+    margin-right: 7px;
+    margin-left: 7px;
+    transition:  500ms ease-in-out, color 100ms ease-in-out;
 }
 
 .square:hover {
     background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
-    color: #EAEEF2;
+    color: #ffffff;
     cursor: pointer;
-    
+    transition: 500ms ease-in-out, color 10ms ease-in-out;
     box-shadow: 0 6px 20px 0 rgb(134 51 153 / 51%);
+    padding-bottom: 10px;
+    margin-top: -10px;
+    padding-bottom: -10px;
 }
 
 .about {
@@ -82,41 +86,38 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
 .square>h3 {
     font-weight: 900;
-    font-size: 120%;
+    font-size: 100%;
 
 }
 
-.square>p {
+.square p {
     
-    margin-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .iconsWhy {
     background-color: #98a8cd45;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 15px;
+    margin-bottom: 10px;
     width: 40%;
     height: auto;
     border-radius: 25px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10%;
     padding-right: 10%;
 
 }
 
-
-
 @media screen and (max-width:600px) {
     .squares {
         display: block;
-        
         margin-left: auto;
-
+        
     }
 
     .square {
-        margin-top: 30px;
+        margin-top: 10px;
         width: 200px;
         margin-left: 130px;
     }
@@ -133,28 +134,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
         
     }
 
-    .iconsWhy {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-
-
-
-
-.about>b {
-    background-image: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-}
-
-.abouts {
    
-    width: 100%;
-    height: 300px;
 }
+
+

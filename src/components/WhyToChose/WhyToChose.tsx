@@ -5,69 +5,7 @@ import images from "../../assets/images";
 
 const WhyToChose = () => {
 
-    function handleHover() {
-        let about = document.getElementsByClassName('aboutUser');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.add('actives')
-        }
-    }
-
-    function handleMouseLeave() {
-        let about = document.getElementsByClassName('aboutUser');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.remove('actives')
-        }
-    }
-
-    function handleHovers() {
-        let about = document.getElementsByClassName('aboutTrust');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.add('actives')
-        }
-    }
-
-    function handleMouseLeaves() {
-        let about = document.getElementsByClassName('aboutTrust');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.remove('actives')
-        }
-    }
-
-    function handleHovers1() {
-        let about = document.getElementsByClassName('abouGuarantee');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.add('actives')
-        }
-    }
-
-    function handleMouseLeaves1() {
-        let about = document.getElementsByClassName('abouGuarantee');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.remove('actives')
-        }
-    }
-
-    function handleHovers2() {
-        let about = document.getElementsByClassName('aboutOnTime');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.add('actives')
-        }
-    }
-
-    function handleMouseLeaves2() {
-        let about = document.getElementsByClassName('aboutOnTime');
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].classList.remove('actives')
-        }
-    }
+   
 
 
     return (
@@ -82,7 +20,7 @@ const WhyToChose = () => {
 
 
             <div className="squares">
-                <div className="square" onMouseOver={handleHover} onMouseLeave={handleMouseLeave}>
+                <div className="square" >
                     <img className="iconsWhy" id="userFriendly" src={images.person} alt="" />
                     <h3>User Friendly</h3>
                     <p>Neki tekst ovdje treba<br>
@@ -90,21 +28,21 @@ const WhyToChose = () => {
                     
                 </div>
 
-                <div className="square" onMouseOver={handleHovers} onMouseLeave={handleMouseLeaves}>
+                <div className="square" >
                     <img className="iconsWhy" id="trust" src={images.handShake} alt="" />
                     <h3>Trust</h3>
                     <p>Neki tekst ovdje treba<br>
                     </br>Neki tekst ovdje</p>
                 </div>
 
-                <div className="square" onMouseOver={handleHovers1} onMouseLeave={handleMouseLeaves1}>
+                <div className="square" >
                     <img className="iconsWhy" id="shield" src={images.shield} alt="" />
                     <h3>Guarantee</h3>
                     <p>Neki tekst ovdje treba<br>
                     </br>Neki tekst ovdje</p>
                 </div>
 
-                <div className="square" onMouseOver={handleHovers2} onMouseLeave={handleMouseLeaves2}>
+                <div className="square" >
                     <img className="iconsWhy" id="onTime" src={images.time} alt="" />
                     <h3>On Time</h3>
                     <p>Neki tekst ovdje treba<br>
