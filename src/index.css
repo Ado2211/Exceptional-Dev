@@ -1,8 +1,9 @@
 @import url(//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular);
 
+
 :root {
-  --font-base: 'GT Walsheim Pro Regular', serif;
-  --font-alt: 'Open Sans', sans-serif;
+  --font-base: 'GT Walsheim Pro Regular', ;
+  --font-alt:  ;
   
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
@@ -14,9 +15,9 @@
 
 body {
   margin: 0;
-  font-family: "GT Walsheim Pro Regular";
+  font-family: 'GT Walsheim Pro Regular';
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
 }
-
