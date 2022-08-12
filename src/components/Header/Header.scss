@@ -10,10 +10,21 @@ z-index: 1;
   background-attachment: fixed;
   padding-bottom: 100px;
   background-color: #c9d2e6;
+  height: 100vh;
+ 
+}
+
+.naslov {
+  height: 50%;
+  border: 1px solid black;
+display:flex;
+margin-top: 10%;
+justify-content: center;
 }
 
 .brand {
- margin-top: 150px;
+
+
   font-weight: 800;
   font-size: 96px;
   line-height: 70px;
@@ -32,7 +43,7 @@ z-index: 1;
  }
 
  .header {
-  background-size: 130%;
+  background-size: 170%;
   background-color: #c9d2e6;
  }
 
