@@ -19,7 +19,7 @@ const Navbar = () => {
                         <ReactBootStrap.Nav.Link href="#whatWeDo">What We Do</ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="#ourTeam">Our Team</ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="#projects"> Projects</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="#contactUs">Contact Us</ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#contactUs" className="contactUs">Contact Us</ReactBootStrap.Nav.Link>
 
                     </ReactBootStrap.Nav>
 
