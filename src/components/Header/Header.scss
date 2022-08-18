@@ -1,30 +1,38 @@
-
-
 .header {
+  transition: 500ms ease;
   background-image: url(../../assets/headerBackground.jfif);
   position: relative;
-z-index: 1;
-  background-position: top;
+  z-index: 1;
+  background-position: 49.775% 100.073%;
+  background-position-y: top;
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 100px;
+  align-items: flex-end;
   background-color: #c9d2e6;
-  height: 100vh;
- 
+  height: 85vh;
+
+}
+
+.header:hover {
+  transition: 500ms ease-in-out;
+  background-size: 105%;
+
 }
 
 .naslov {
   height: 50%;
-  border: 1px solid black;
-display:flex;
-margin-top: 10%;
-justify-content: center;
+
+  display: flex;
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand {
 
-
+  margin-bottom: 5px;
   font-weight: 800;
   font-size: 96px;
   line-height: 70px;
@@ -36,23 +44,8 @@ justify-content: center;
 
 }
 
-@media screen and (max-width: 600px) {
- .brand {
-  font-size: 66px;
-  margin-top: 100px;
- }
-
- .header {
-  background-size: 170%;
-  background-color: #c9d2e6;
- }
-
-
-}
-
-
 .dev {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-weight: 800;
   font-size: 34px;
@@ -60,15 +53,68 @@ justify-content: center;
 }
 
 .paragraf {
-  color: #FFFFFF;
-  font-size: medium;
+  color: #c9c9c9;
+
   text-align: center;
-  font-size:18px;
+  font-size: 18px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+@media screen and (max-width: 1200px) {
+  .brand {
+    font-size: 80px;
+
+  }
+
+  .dev {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+
+  .paragraf {
+    font-size: 16px;
+  }
+
+  .header {
+
+    background-position-y: top;
+    background-size: 120%;
+    background-color: #c9d2e6;
+  }
+
+  .header:hover {
+    background-size: 125%;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+  .brand {
+    font-size: 50px;
+
+  }
+
+  .dev {
+    margin-top: -20px;
+    font-size: 22px;
+  }
+
+  .paragraf {
+    font-size: 14px;
+  }
+
+  .header {
+
+    background-position-y: top;
+    background-size: 180%;
+    background-color: #c9d2e6;
+    height: 50vh;
+  }
+
+  .header:hover {
+    background-size: 185%;
+  }
 
 
-
-
+}

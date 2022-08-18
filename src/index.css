@@ -1,21 +1,10 @@
 @import url(//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular);
 
+@font-face {font-family: "GT Walsheim Pro Regular"; src: url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.eot"); src: url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.woff") format("woff"), url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4417812509ea84242dcf790e829ca350.svg#GT Walsheim Pro Regular") format("svg"); }
 
-:root {
-  --font-base: 'GT Walsheim Pro Regular', ;
-  --font-alt:  ;
-  
-  --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
-  --color-gray: #545454;
-  --color-crimson: #F5EFDB;
-  --color-grey: #AAAAAA;
-  --color-white: #FFFFFF;
-}
-
-body {
+* {
   margin: 0;
-  font-family: 'GT Walsheim Pro Regular';
+ font-family: "GT Walsheim Pro Regular";
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
