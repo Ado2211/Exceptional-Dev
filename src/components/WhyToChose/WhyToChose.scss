@@ -1,10 +1,11 @@
 .whyToChose {
     padding-left: -20%;
     padding-right: -20%;
-  
+    padding-top: 50px;
+    padding-bottom: 150px;
     background-color: #c9d2e6;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 
 }
 
@@ -14,7 +15,7 @@
     position: absolute;
 
     top: -120px;
-    width: 70%;
+    width: 60%;
     height: auto;
 
     z-index: -1;
@@ -22,8 +23,7 @@
 
 .naslovWhy {
     text-align: center;
-    padding-top: 100px;
-    
+    color: rgb(68, 9, 55);
     font-size: 30px;
 
 }
@@ -31,40 +31,45 @@
 .squares {
     display: flex;
     justify-content: center;
-   padding-right: 2.5px;
-   
-}
-
-.square {
     
-    width: 200px;
-    height: 185px;
-    border-radius: 25px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, );
-    margin-right: 15px;
-    margin-left: 15px;
-    transition:  400ms ease-in-out, color 100ms ease-in-out;
+
 }
 
-.square:hover {
-    background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
-    color: #ffffff;
-    cursor: pointer;
-    transition: 500ms ease-in-out, color 10ms ease-in-out;
-    box-shadow: 0 6px 20px 0 rgb(134 51 153 / 81%);
-    padding-bottom: 10px;
-    margin-top: -10px;
-    padding-bottom: -10px;
+
+
+@media screen and (min-width:750px) {
+    .square {
+
+        width: 200px;
+        height: 185px;
+        border-radius: 25px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, );
+        margin-right: 25px;
+        margin-left: 25px;
+        transition: 200ms ease-in-out, color 100ms ease-in-out;
+    }
+
+    .square:hover {
+        background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
+        color: #ffffff;
+        cursor: pointer;
+        transition: 300ms ease-in-out, color 10ms ease-in-out;
+        box-shadow: 0 6px 20px 0 rgb(134 51 153 / 81%);
+
+        margin-top: -10px;
+
+
+    }
 }
 
 .about {
-    display:none;
+    display: none;
 }
 
 .actives {
-    display:block;
-    
+    display: block;
+
 }
 
 .shapes {
@@ -75,24 +80,25 @@
 .shape {
     width: 30px;
     height: 10px;
-    margin-bottom:50px; 
+    margin-bottom: 20px;
     background: linear-gradient(90deg, rgba(99, 44, 135, 0.7) 0%, rgba(241, 42, 205, 0.7) 100%);
-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-border-radius: 20px;
-transform: matrix(1, 0, 0, -1, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 
 
 .square>h3 {
     font-weight: 900;
-    font-size: 100%;
+    font-size: 18px;
 
 }
 
 .square p {
-    
-    padding-bottom: 10px
+
+    padding-bottom: 10px;
+    font-size: 14px;
 }
 
 .iconsWhy {
@@ -109,32 +115,69 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
 }
 
-@media screen and (max-width:600px) {
-    .squares {
-        display: block;
-        margin-left: auto;
-        
-    }
-
+@media screen and (max-width:750px) {
     .square {
-        margin-top: 10px;
+
         width: 200px;
-        margin-left: 130px;
+        height: 180px;
+        border-radius: 25px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, );
+margin-top: 10px;
+
+
+        transition: 200ms ease-in-out, color 100ms ease-in-out;
     }
 
-    .imgBg {
-       width: 120%;
-        margin-top: 350px;
+
+
+    .squares {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-column-gap: 30px;
+        height: 450px;
+       
+
+    }
+
+    .square:hover {
+        background: linear-gradient(47.45deg, #6B33B2 0.11%, #E527BD 99.94%);
+        color: #ffffff;
+        cursor: pointer;
+        transition: 300ms ease-in-out, color 10ms ease-in-out;
+        box-shadow: 0 6px 20px 0 rgb(134 51 153 / 81%);
         
-        transform: rotate(90deg);
     }
 
-    .square>h3{
-        font-size: 90%;
-        
+    .square:nth-child(1):hover{
+        margin-top: 0px;
+    }
+    
+    .square:nth-child(2):hover{
+        margin-top: -0px;
     }
 
-   
+.square:nth-child(3):hover{
+    margin-top: -0px;
+}
+
+.square:nth-child(4):hover{
+    margin-top: -0px;
 }
 
 
+    .imgBg {
+        width: 120%;
+        margin-top: 350px;
+        margin-left: -120px;
+        transform: rotate(90deg);
+    }
+
+    .square>h3 {
+        font-size: 90%;
+
+    }
+
+
+}

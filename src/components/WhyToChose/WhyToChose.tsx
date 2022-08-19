@@ -12,7 +12,7 @@ const WhyToChose = () => {
         <section className="whyToChose  " id="aboutUs">
             <Container>
             <img className="imgBg " src={images.bgWhy} alt="" />
-            <h1 className="naslovWhy">Why to Chose Exceptional Development?
+            <h1 className="naslovWhy">Why to Chose <b>Exceptional Development</b>?
             </h1>
             <div className="shapes">
                 <div className="shape"></div>

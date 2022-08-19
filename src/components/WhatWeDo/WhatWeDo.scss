@@ -3,8 +3,9 @@
     padding-right: -20%;
     padding-bottom: 400px;
     background-color: #c9d2e6;
- padding-top: 100px;
-    z-index: 0;
+position: relative;
+    z-index: 1;
+    
     
 }
 
@@ -40,14 +41,20 @@
     border-radius: 50%;
     border: 10px solid #c9d2e6;;
     cursor: pointer;
-  
+    transition: 300ms ease-in-out, ;
 }
 .circle:hover {
-background: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
+    background: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
+border-color: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
+box-shadow: 0 5px 20px 0 rgb(134 51 153 / 81%);
+    margin-top: -10px;
+    padding-bottom: -10px;
+transition: 300ms ease-in-out  ;
 }
 
 .activer {
     background: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
+    transition: 300ms ease-in-out, color 10ms ease-in-out;
 }
 
 .img {
@@ -67,6 +74,7 @@ background: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
     margin-top: -50px;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 .abou {
