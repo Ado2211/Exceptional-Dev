@@ -1,7 +1,7 @@
 .whatWeDo {
     padding-left: -20%;
     padding-right: -20%;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
     background-color: #c9d2e6;
 position: relative;
     z-index: 1;
@@ -99,4 +99,8 @@ margin-top: -80px;
 
 .selected {
     background: linear-gradient(47.45deg, #6B33B2 2.11%, #E527BD 99.94%);
+}
+
+.abou>p {
+    color: #9e9e9e
 }

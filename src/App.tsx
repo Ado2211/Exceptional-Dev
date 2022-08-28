@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './App.css';
-import { Header, WhyToChose, WhatWeDo, LastProjects, Contact, Footer } from './components';
+import { Header, WhyToChose, WhatWeDo,  Contact, Footer, OurTeam } from './components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <WhyToChose />
       <WhatWeDo />
-      <LastProjects />
+      <OurTeam />
       <Contact />
       <Footer />
     </div>
