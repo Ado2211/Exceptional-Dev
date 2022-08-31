@@ -78,63 +78,69 @@ const WhatWeDo = () => {
     return (
         <section className="whatWeDo" id="whatWeDo">
             <Container>
-            <h1 className="naslovWhy">What <b> We do </b>?</h1>
-            <div className="shapes">
-                <div className="shape"></div>
-            </div>
-            <div className="circles">
-                <div className="circle selected" onMouseOver={handleHover} >
-                    <img className="img" id="userFriendly" src={images.mobileDev} alt="" />
+                <h1 className="naslovWhy">What <b> We do </b>?</h1>
+                <div className="shapes">
+                    <div className="shape"></div>
+                </div>
+                <div className="circles">
+                    <div className="circle selected" onMouseOver={handleHover} >
+                        <img className="img" id="userFriendly" src={images.mobileDev} alt="" />
+
+                    </div>
+
+                    <div className="circle circleCenter" onMouseOver={handleHovers} >
+                        <img className="img" id="trust" src={images.webDev} alt="" />
+
+                    </div>
+
+                    <div className="circle" onMouseOver={handleHovers1} >
+                        <img className="img" id="shield" src={images.software} alt="" />
+
+                    </div>
+
 
                 </div>
+                <div className="aboutDev">
 
-                <div className="circle circleCenter" onMouseOver={handleHovers} >
-                    <img className="img" id="trust" src={images.webDev} alt="" />
+                    <div className="mobileDev abou hide actives">
+                        <h3>Mobile APP Development</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it <br></br>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it <br></br>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                        </p>
+                    </div>
 
+                    <div className="webDev abou hide">
+
+                        <h3>Web APP Development</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it <br></br>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br></br>
+                            when an a galley of type and scrambled itLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                        </p>
+                    </div>
+
+                    <div className="softwareDev abou hide">
+                        <h3>Software Development</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            <br></br>
+                            Lorem Ipsum has been the industry's standard dummy when an unknown printer took a galley of type and scrambled ittext ever since the 1500s, when an a galley of type and scrambled it <br></br>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
+                        </p>
+                    </div>
+
+                    <div className="technologies">
+                        
+                        <h4>The Technologies We Use</h4>
+                        <div className="techs">
+                            <img src={images.adnan} className="img-techs" alt="" />
+                            <img src={images.adnan} className="img-techs" alt="" />
+                            <img src={images.adnan} className="img-techs" alt="" />
+                        </div>
+                    </div>
                 </div>
 
-                <div className="circle" onMouseOver={handleHovers1} >
-                    <img className="img" id="shield" src={images.software} alt="" />
-
-                </div>
-
-
-            </div>
-            <div className="aboutDev">
-
-                <div className="mobileDev abou hide actives">
-                    <h3>Mobile APP Development</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it <br></br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it <br></br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
-                    </p>
-                </div>
-
-                <div className="webDev abou hide">
-
-                    <h3>Web APP Development</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it <br></br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br></br>
-                        when an a galley of type and scrambled itLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
-                    </p>
-                </div>
-
-                <div className="softwareDev abou hide">
-                    <h3>Software Development</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        <br></br>
-                        Lorem Ipsum has been the industry's standard dummy when an unknown printer took a galley of type and scrambled ittext ever since the 1500s, when an a galley of type and scrambled it <br></br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an a galley of type and scrambled it
-                    </p>
-                </div>
-
-
-            </div>
-            <div className="technologies">
-                <div>The Technologies We Use</div>
-            </div>
             </Container>
         </section >
     )
