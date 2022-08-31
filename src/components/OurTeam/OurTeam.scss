@@ -5,7 +5,7 @@
 
 
 
-section.our-team {
+.our-team {
   padding: 70px 0px;
   background-color: white;
   text-align: center;
@@ -40,6 +40,7 @@ section.our-team {
   top: 0;
   left: 0;
   right: 0;
+  margin-bottom: 40px;
   opacity: 0;
 }
 .our-team .member .member-detail {
@@ -48,7 +49,7 @@ section.our-team {
   right: 0;
   bottom: 10px;
 }
-.our-team .member .social {
+.our-team .member .social  {
   position: absolute;
   left: 0;
   bottom: -38px;
@@ -61,6 +62,7 @@ section.our-team {
   margin: 0 10px;
   display: inline-block;
   color: #fff;
+  
 }
 .our-team .member .social a:hover {
   color: #cda45e;
@@ -68,15 +70,24 @@ section.our-team {
 .our-team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+  
 }
-.our-team .member:hover .member-info {
+.our-team .member:hover .member-info  {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.83) 0%, rgba(0, 0, 0, 0.57) 20%, rgba(121, 85, 72, 0.09) 100%);
   opacity: 1;
+  margin-bottom: 0px;
   transition: 0.4s;
+  transform: scale(1.1); 
 }
 .our-team .member:hover .member-detail {
   bottom: 80px;
+ 
 }
 .our-team .member:hover .social {
   bottom: 10px;
+  
 }
+
+
+
+
